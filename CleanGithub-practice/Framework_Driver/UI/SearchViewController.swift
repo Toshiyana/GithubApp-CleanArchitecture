@@ -11,6 +11,8 @@ final class SearchViewController: UIViewController {
     @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var tableView: UITableView!
     
+    private var viewDataArray = [GitHubRepoViewData]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,21 +26,20 @@ final class SearchViewController: UIViewController {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // TODO:
-        return 5
+        return viewDataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // TODO:
         let cell = tableView.dequeueReusableCell(withIdentifier: LikeRepositoryCell.identifier, for: indexPath) as! LikeRepositoryCell
+        cell.configure(with: viewDataArray[indexPath.row])
         return cell
     }
-    
-    
 }
 
+// MARK: - UITableViewDelegate
 extension SearchViewController: UITableViewDelegate {
     
 }
