@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		993F14412868888D00FE2AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F14402868888D00FE2AEB /* AppDelegate.swift */; };
 		993F14432868888D00FE2AEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F14422868888D00FE2AEB /* SceneDelegate.swift */; };
-		993F14452868888D00FE2AEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F14442868888D00FE2AEB /* ViewController.swift */; };
 		993F14482868888D00FE2AEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993F14462868888D00FE2AEB /* Main.storyboard */; };
 		993F144A2868889100FE2AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993F14492868889100FE2AEB /* Assets.xcassets */; };
 		993F144D2868889100FE2AEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993F144B2868889100FE2AEB /* LaunchScreen.storyboard */; };
 		993F14582868889200FE2AEB /* CleanGithub_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F14572868889200FE2AEB /* CleanGithub_practiceTests.swift */; };
 		993F14622868889200FE2AEB /* CleanGithub_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F14612868889200FE2AEB /* CleanGithub_practiceUITests.swift */; };
 		993F14642868889200FE2AEB /* CleanGithub_practiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F14632868889200FE2AEB /* CleanGithub_practiceUITestsLaunchTests.swift */; };
+		993F14732868902900FE2AEB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F14722868902900FE2AEB /* SearchViewController.swift */; };
+		993F14752868904B00FE2AEB /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F14742868904B00FE2AEB /* LikesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		993F143D2868888D00FE2AEB /* CleanGithub-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CleanGithub-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		993F14402868888D00FE2AEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		993F14422868888D00FE2AEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		993F14442868888D00FE2AEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		993F14472868888D00FE2AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		993F14492868889100FE2AEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		993F144C2868889100FE2AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		993F145D2868889200FE2AEB /* CleanGithub-practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CleanGithub-practiceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		993F14612868889200FE2AEB /* CleanGithub_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanGithub_practiceUITests.swift; sourceTree = "<group>"; };
 		993F14632868889200FE2AEB /* CleanGithub_practiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanGithub_practiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		993F14722868902900FE2AEB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		993F14742868904B00FE2AEB /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,9 @@
 		993F143F2868888D00FE2AEB /* CleanGithub-practice */ = {
 			isa = PBXGroup;
 			children = (
+				993F1471286889F900FE2AEB /* Framework_Driver */,
 				993F14402868888D00FE2AEB /* AppDelegate.swift */,
 				993F14422868888D00FE2AEB /* SceneDelegate.swift */,
-				993F14442868888D00FE2AEB /* ViewController.swift */,
-				993F14462868888D00FE2AEB /* Main.storyboard */,
 				993F14492868889100FE2AEB /* Assets.xcassets */,
 				993F144B2868889100FE2AEB /* LaunchScreen.storyboard */,
 				993F144E2868889100FE2AEB /* Info.plist */,
@@ -125,6 +126,24 @@
 				993F14632868889200FE2AEB /* CleanGithub_practiceUITestsLaunchTests.swift */,
 			);
 			path = "CleanGithub-practiceUITests";
+			sourceTree = "<group>";
+		};
+		993F1470286889E000FE2AEB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				993F14462868888D00FE2AEB /* Main.storyboard */,
+				993F14722868902900FE2AEB /* SearchViewController.swift */,
+				993F14742868904B00FE2AEB /* LikesViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		993F1471286889F900FE2AEB /* Framework_Driver */ = {
+			isa = PBXGroup;
+			children = (
+				993F1470286889E000FE2AEB /* UI */,
+			);
+			path = Framework_Driver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				993F14452868888D00FE2AEB /* ViewController.swift in Sources */,
+				993F14752868904B00FE2AEB /* LikesViewController.swift in Sources */,
 				993F14412868888D00FE2AEB /* AppDelegate.swift in Sources */,
+				993F14732868902900FE2AEB /* SearchViewController.swift in Sources */,
 				993F14432868888D00FE2AEB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
