@@ -17,6 +17,9 @@
 		993F14642868889200FE2AEB /* CleanGithub_practiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F14632868889200FE2AEB /* CleanGithub_practiceUITestsLaunchTests.swift */; };
 		993F14732868902900FE2AEB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F14722868902900FE2AEB /* SearchViewController.swift */; };
 		993F14752868904B00FE2AEB /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F14742868904B00FE2AEB /* LikesViewController.swift */; };
+		993F1479286B502D00FE2AEB /* LikeRepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F1477286B502D00FE2AEB /* LikeRepositoryCell.swift */; };
+		993F147A286B502D00FE2AEB /* LikeRepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 993F1478286B502D00FE2AEB /* LikeRepositoryCell.xib */; };
+		993F147D286B68D500FE2AEB /* ReposPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F147C286B68D500FE2AEB /* ReposPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		993F14632868889200FE2AEB /* CleanGithub_practiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanGithub_practiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		993F14722868902900FE2AEB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		993F14742868904B00FE2AEB /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
+		993F1477286B502D00FE2AEB /* LikeRepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeRepositoryCell.swift; sourceTree = "<group>"; };
+		993F1478286B502D00FE2AEB /* LikeRepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeRepositoryCell.xib; sourceTree = "<group>"; };
+		993F147C286B68D500FE2AEB /* ReposPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		993F143F2868888D00FE2AEB /* CleanGithub-practice */ = {
 			isa = PBXGroup;
 			children = (
+				993F147B286B68B000FE2AEB /* InterfaceAdapter */,
 				993F1471286889F900FE2AEB /* Framework_Driver */,
 				993F14402868888D00FE2AEB /* AppDelegate.swift */,
 				993F14422868888D00FE2AEB /* SceneDelegate.swift */,
@@ -131,6 +138,7 @@
 		993F1470286889E000FE2AEB /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				993F1476286B500700FE2AEB /* Cell */,
 				993F14462868888D00FE2AEB /* Main.storyboard */,
 				993F14722868902900FE2AEB /* SearchViewController.swift */,
 				993F14742868904B00FE2AEB /* LikesViewController.swift */,
@@ -144,6 +152,23 @@
 				993F1470286889E000FE2AEB /* UI */,
 			);
 			path = Framework_Driver;
+			sourceTree = "<group>";
+		};
+		993F1476286B500700FE2AEB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				993F1477286B502D00FE2AEB /* LikeRepositoryCell.swift */,
+				993F1478286B502D00FE2AEB /* LikeRepositoryCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		993F147B286B68B000FE2AEB /* InterfaceAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				993F147C286B68D500FE2AEB /* ReposPresenter.swift */,
+			);
+			path = InterfaceAdapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				993F147A286B502D00FE2AEB /* LikeRepositoryCell.xib in Resources */,
 				993F144D2868889100FE2AEB /* LaunchScreen.storyboard in Resources */,
 				993F144A2868889100FE2AEB /* Assets.xcassets in Resources */,
 				993F14482868888D00FE2AEB /* Main.storyboard in Resources */,
@@ -277,7 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				993F147D286B68D500FE2AEB /* ReposPresenter.swift in Sources */,
 				993F14752868904B00FE2AEB /* LikesViewController.swift in Sources */,
+				993F1479286B502D00FE2AEB /* LikeRepositoryCell.swift in Sources */,
 				993F14412868888D00FE2AEB /* AppDelegate.swift in Sources */,
 				993F14732868902900FE2AEB /* SearchViewController.swift in Sources */,
 				993F14432868888D00FE2AEB /* SceneDelegate.swift in Sources */,
