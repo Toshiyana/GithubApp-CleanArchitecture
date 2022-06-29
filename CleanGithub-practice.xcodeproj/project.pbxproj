@@ -20,6 +20,7 @@
 		993F1479286B502D00FE2AEB /* LikeRepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F1477286B502D00FE2AEB /* LikeRepositoryCell.swift */; };
 		993F147A286B502D00FE2AEB /* LikeRepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 993F1478286B502D00FE2AEB /* LikeRepositoryCell.xib */; };
 		993F147D286B68D500FE2AEB /* ReposPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F147C286B68D500FE2AEB /* ReposPresenter.swift */; };
+		99827523286C1AD500F2A17D /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99827522286C1AD500F2A17D /* Application.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		993F1477286B502D00FE2AEB /* LikeRepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeRepositoryCell.swift; sourceTree = "<group>"; };
 		993F1478286B502D00FE2AEB /* LikeRepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeRepositoryCell.xib; sourceTree = "<group>"; };
 		993F147C286B68D500FE2AEB /* ReposPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposPresenter.swift; sourceTree = "<group>"; };
+		99827522286C1AD500F2A17D /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +109,11 @@
 		993F143F2868888D00FE2AEB /* CleanGithub-practice */ = {
 			isa = PBXGroup;
 			children = (
+				99827521286C1AB200F2A17D /* Main */,
 				993F147B286B68B000FE2AEB /* InterfaceAdapter */,
 				993F1471286889F900FE2AEB /* Framework_Driver */,
-				993F14402868888D00FE2AEB /* AppDelegate.swift */,
 				993F14422868888D00FE2AEB /* SceneDelegate.swift */,
 				993F14492868889100FE2AEB /* Assets.xcassets */,
-				993F144B2868889100FE2AEB /* LaunchScreen.storyboard */,
 				993F144E2868889100FE2AEB /* Info.plist */,
 			);
 			path = "CleanGithub-practice";
@@ -169,6 +170,16 @@
 				993F147C286B68D500FE2AEB /* ReposPresenter.swift */,
 			);
 			path = InterfaceAdapter;
+			sourceTree = "<group>";
+		};
+		99827521286C1AB200F2A17D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				99827522286C1AD500F2A17D /* Application.swift */,
+				993F14402868888D00FE2AEB /* AppDelegate.swift */,
+				993F144B2868889100FE2AEB /* LaunchScreen.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				993F147D286B68D500FE2AEB /* ReposPresenter.swift in Sources */,
+				99827523286C1AD500F2A17D /* Application.swift in Sources */,
 				993F14752868904B00FE2AEB /* LikesViewController.swift in Sources */,
 				993F1479286B502D00FE2AEB /* LikeRepositoryCell.swift in Sources */,
 				993F14412868888D00FE2AEB /* AppDelegate.swift in Sources */,
