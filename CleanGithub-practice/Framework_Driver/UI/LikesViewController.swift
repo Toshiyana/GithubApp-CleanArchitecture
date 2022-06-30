@@ -56,6 +56,7 @@ extension LikesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: LikeRepositoryCell.identifier, for: indexPath) as! LikeRepositoryCell
+        cell.configure(with: viewDataArray[indexPath.row])
         return cell
     }
     

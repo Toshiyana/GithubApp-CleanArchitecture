@@ -12,7 +12,7 @@ final class LikeRepositoryCell: UITableViewCell {
     static let identifier = "LikeRepositoryCell"
     
     static func nib() -> UINib {
-        UINib(nibName: identifier, bundle: nil)
+        UINib(nibName: "LikeRepositoryCell", bundle: Bundle(for: self))
     }
     
     @IBOutlet private weak var containerView: UIView! {
